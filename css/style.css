@@ -4,6 +4,7 @@
     --menu-color: #cac8c8;
     --font-color: #fff;
     --bg-color: #222028;
+    --bg-white: #fff;
 }
 
 /*  typography */
@@ -15,12 +16,30 @@
   font-display: swap;
 }
 
+main {
+  background: var(--secondary-color);
+  height: 100%;
+}
+
 body {
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
+  padding-top: 80px;
+  background: var(--secondary-color);
+}
+
+header {
+  padding: 0px 130px;
+  background: var(--secondary-color);
+  transition: top 0.4s ease-in-out;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
 }
 
 p, .paragraph {
@@ -620,14 +639,15 @@ textarea.form-control {
 }
 
 /* /card */
-.navigation {
-  padding: 40px 130px;
-  transition: .3s ease;
-}
+
 
 .navigation.nav-bg {
-  background-color: #222028;
+  background-color: var(--secondary-color);
   padding: 15px 100px;
+}
+
+.nav-up {
+  top: -90px;
 }
 
 @media (max-width: 991px) {
@@ -639,7 +659,7 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #222028;
+    background: var(--secondary-color);
   }
 }
 

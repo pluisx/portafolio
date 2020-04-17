@@ -44,39 +44,14 @@ header {
   z-index: 10000;
 }
 
-@media (max-width: 650px) {
-  header {
-    padding: 10px 25px !important;
-    height: 100px !important;
-  }
-  .font-tertiary.typewrite.text-yellow.fz-90 {
-    height: 110px !important;
-}
+
 
 #about-me {
   padding-top: 70% !important;
 }
 }
 
-@media (max-width: 375px) {
-  .title-portfolio {
-    font-size: 17px !important;
-    padding: 14px !important;
-    top: 4% !important;
-  }
-  .mt-30 {
-    margin-top: 0 !important;
-  }
-  .title-section-about {
-    font-size: 40px !important;
-  }
-  .h-75 {
-    height: 45px !important;
-  }
-  .fw-bold.text-yellow.fz-35 {
-    line-height: 42px !important;
-  }
-} 
+
 
 p, .paragraph {
   font-weight: 400;
@@ -105,22 +80,10 @@ h1, .h1 {
 }
 
 
-
-@media (max-width: 991px) {
-  h1, .h1 {
-    font-size: 65px;
-  }
-}
-
 h2, .h2 {
   font-size: 60px;
 }
 
-@media (max-width: 991px) {
-  h2, .h2 {
-    font-size: 50px;
-  }
-}
 
 h3, .h3 {
   font-size: 40px;
@@ -563,8 +526,8 @@ a:hover {
   width: 15%;
 }
 
-.h-75 {
-  height: 75px !important;
+.h-75-px {
+  height: 75px;
 }
 
 .b-17 {
@@ -691,19 +654,6 @@ textarea.form-control {
   top: -130px;
 }
 
-@media (max-width: 991px) {
-  .navigation.nav-bg {
-    padding: 15px 20px;
-  }
-}
-
-@media (max-width: 991px) {
-  .navigation {
-    padding: 20px;
-    background: var(--secondary-color);
-  }
-}
-
 .navbar .nav-item .nav-link {
   text-transform: uppercase;
   padding: 15px;
@@ -727,12 +677,7 @@ textarea.form-control {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
-  .hero-area {
-    padding: 250px 0 150px;
-    overflow: hidden;
-  }
-}
+
 
 .hero-area h1 {
   position: relative;
@@ -1033,11 +978,7 @@ textarea.form-control {
   align-items: center;
 }
 
-@media (max-width: 991px) {
-  .card-lg {
-    flex-direction: column;
-  }
-}
+
 
 blockquote {
   display: inline-block;
@@ -1073,11 +1014,7 @@ blockquote {
   margin-top: -230px;
 }
 
-@media (max-width: 991px) {
-  .drag-lg-top {
-    margin-top: 0;
-  }
-}
+
 
 .page-title-alt .container {
   position: relative;
@@ -1185,51 +1122,6 @@ blockquote {
   font-weight: bold;
 }
 
-@media (max-width: 650px) {
-  .hero-area {
-    padding: 100px 0 70px;
-    height: 100%;
-  }
-  .fz-70 {
-    font-size: 40px !important;
-  }
-  .fz-90 {
-    font-size: 40px !important;
-  }
-  .fz-95 {
-    font-size: 65px;
-  }
-  .icon-smile {
-    margin-left: 15px;
-  }
-  #l5 {
-    top: 70px;
-    right: -207px;
-    opacity: 0.2;
-  }
-  #l7 {
-    bottom: -70px;
-    left: 40%;
-    opacity: 0.2;
-  }
-  #l9 {
-    bottom: 160px;
-    right: -40px;
-    opacity: 0.2;
-  }
-  #l8 {
-    bottom: 130px;
-    right: 36%;
-    opacity: 0.2;
-  }
-  #l4 {
-    opacity: 0.2;
-  }
-  .prin-logo {
-    max-width: 130px;
-  }
-
-}
 
 /*------ Tooltip Experiencia y educación -------*/
 
@@ -1315,4 +1207,125 @@ blockquote {
 }
 [data-tooltip-location="right"]:hover:after {
   transform: translateY(50%) scaleX(1);
+}
+
+@media (max-width: 991px) {
+  h1, .h1 {
+    font-size: 65px;
+  }
+  h2, .h2 {
+    font-size: 50px;
+  }
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+  .navigation {
+    padding: 20px;
+    background: var(--secondary-color);
+  }
+  .drag-lg-top {
+    margin-top: 0;
+  }
+  .card-lg {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 160px 0 150px;
+    overflow: hidden;
+  }
+  .title-portfolio {
+    font-size: 25px;
+    top: 5%;
+  }
+  .mt-30 {
+    margin-top: 10px;
+  }
+  .fz-90 {
+    font-size: 50px;
+  }
+  .fz-70 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 10px 25px;
+    height: 100px;
+  }
+  .font-tertiary.typewrite.text-yellow.fz-90 {
+    height: 110px;
+}
+.hero-area {
+  padding: 100px 0 70px;
+  height: 100%;
+}
+.fz-70 {
+  font-size: 40px;
+}
+.fz-90 {
+  font-size: 40px;
+}
+.fz-95 {
+  font-size: 65px;
+}
+.icon-smile {
+  margin-left: 15px;
+}
+#l5 {
+  top: 70px;
+  right: -207px;
+  opacity: 0.2;
+}
+#l7 {
+  bottom: -70px;
+  left: 40%;
+  opacity: 0.2;
+}
+#l9 {
+  bottom: 160px;
+  right: -40px;
+  opacity: 0.2;
+}
+#l8 {
+  bottom: 130px;
+  right: 36%;
+  opacity: 0.2;
+}
+#l4 {
+  opacity: 0.2;
+}
+.prin-logo {
+  max-width: 130px;
+}
+}
+
+
+@media (max-width: 575px) {
+  .title-portfolio {
+    font-size: 27px;
+    padding: 14px;
+    top: 4%;
+  }
+  .mt-30 {
+    margin-top: 0;
+  }
+  .title-section-about {
+    font-size: 40px;
+  }
+  .h-75 {
+    height: 45px;
+  }
+  .fw-bold.text-yellow.fz-35 {
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 489px) {
+  .title-portfolio {
+    font-size: 17px;
+  }
 }

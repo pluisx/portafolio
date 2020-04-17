@@ -44,14 +44,9 @@ header {
   z-index: 10000;
 }
 
-
-
 #about-me {
   padding-top: 70% !important;
 }
-}
-
-
 
 p, .paragraph {
   font-weight: 400;

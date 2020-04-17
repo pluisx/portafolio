@@ -5,6 +5,8 @@
     --font-color: #fff;
     --bg-color: #222028;
     --bg-white: #fff;
+    height: 100%;
+    min-height: 100%;
 }
 
 /*  typography */
@@ -41,6 +43,41 @@ header {
   top: 0;
   z-index: 10000;
 }
+
+@media (max-width: 650px) {
+  header {
+    padding: 10px 25px;
+    height: 100px;
+  }
+  .font-tertiary.typewrite.text-yellow.fz-90 {
+    height: 110px;
+}
+
+#about-me {
+  padding-top: 70%;
+}
+}
+
+@media (max-width: 375px) {
+  .title-portfolio {
+    font-size: 17px;
+    padding: 14px;
+    top: 4%;
+  }
+  .mt-30 {
+    margin-top: 0;
+  }
+  .title-section-about {
+    font-size: 40px;
+  }
+  .h-75 {
+    height: 45px !important;
+  }
+  .fw-bold.text-yellow.fz-35 {
+    line-height: 42px;
+  }
+} 
+
 
 p, .paragraph {
   font-weight: 400;
@@ -230,7 +267,7 @@ a.btnComenzar:hover {
 
 
 body {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   overflow-x: hidden;
 }
 
@@ -683,8 +720,9 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 200px 0 80px;
+  padding: 150px 0 80px;
   position: relative;
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   z-index: 1;
   overflow: hidden;
@@ -1150,7 +1188,7 @@ blockquote {
 
 @media (max-width: 650px) {
   .hero-area {
-    padding: 190px 0 70px;
+    padding: 100px 0 70px;
   }
   .fz-70 {
     font-size: 40px !important;

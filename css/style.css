@@ -34,17 +34,13 @@ body {
 }
 
 header {
-  padding: 25px 130px;
+  padding: 10px 130px;
   background: var(--secondary-color);
   transition: top 0.1s ease-in-out;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10000;
-}
-
-#about-me {
-  padding-top: 70% !important;
 }
 
 p, .paragraph {
@@ -319,7 +315,7 @@ a:hover {
 }
 
 #about-me {
-  padding-top: 25%;
+  padding-top: 30%;
 }
 
 .opacity-1 {
@@ -522,6 +518,11 @@ a:hover {
 
 .h-75-px {
   height: 75px;
+}
+
+.max-width-40 {
+  max-width: 40%;
+  height: auto;
 }
 
 .b-17 {
@@ -1222,6 +1223,15 @@ blockquote {
   }
   .card-lg {
     flex-direction: column;
+  }
+  #about-me {
+    padding-top: 60% !important;
+  }
+}
+
+@media (max-width: 871px) {
+  #about-me {
+    padding-top: 70% !important;
   }
 }
 

@@ -40,7 +40,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10000;
+  z-index: 100;
+  overflow: hidden;
 }
 
 p, .paragraph {
@@ -269,6 +270,7 @@ button,
 select {
   cursor: pointer;
   transition: .2s ease;
+  color: #fff;
 }
 
 a:focus,
@@ -278,11 +280,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: #41228e !important;
+  color: var(--primary-color) !important;
 }
 
 a:hover {
-  color: #41228e;
+  color: var(--primary-color);
 }
 
 .slick-slide {
@@ -648,6 +650,7 @@ textarea.form-control {
 
 .nav-up {
   top: -130px;
+  overflow: hidden;
 }
 
 .navbar .nav-item .nav-link {

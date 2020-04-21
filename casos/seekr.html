@@ -31,7 +31,7 @@
 
   <header class="nav-down">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand font-tertiary h3"><img class="prin-logo" id="logo-pluisx" src="../images/logo-pluisx.png" alt="Logo Pluisx"></a>
+      <a class="navbar-brand font-tertiary h3" href="../index.html"><img class="prin-logo" src="../images/logo-pluisx.png" alt="Logo Pluisx"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -192,6 +192,47 @@
 
 <!-- Main Script -->
 <script src="../js/script.js"></script>
+
+<script>
+  // Esconder el menu en scrolldown
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
 
 </body>
 </html>

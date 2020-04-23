@@ -134,7 +134,7 @@ p.tag {
     }
 }
 
-@media(){
+@media(max-width:437px){
     .container-desktop {
         left: -160px;
         right: 40px;

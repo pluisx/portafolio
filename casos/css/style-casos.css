@@ -1,0 +1,83 @@
+:root {
+    --seekr-color: #4E70F8;
+}
+
+body {
+    background-color: var(--seekr-color);
+    overflow-x: hidden;
+}
+
+section {
+    overflow: initial;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.header-seekr {
+    background: var(--seekr-color);
+}
+.navbar .nav-item a.nav-link.btnCasos {
+    font-weight: lighter;
+    border: 2px solid #ffffff80;
+    border-radius: 5px;
+    padding: 15px 33px;
+}
+.navbar .nav-item a.nav-link.btnCasos:hover {
+    color: var(--seekr-color);
+    background: #fff;
+    font-weight: 500;
+}
+.bg-seekr {
+    background: var(--seekr-color);
+}
+.container-breadcrumb {
+    margin-top: 23px;
+    padding-bottom: 1px;
+}
+.breadcrumb {
+    background-color: unset;
+}
+.breadcrumb-item + .breadcrumb-item {
+    color: #fff;
+    font-weight: lighter;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #fff;
+}
+
+.page-title {
+    padding: 0 0 60px;
+}
+.container-desktop {
+    position: absolute;
+    bottom: -190px;
+    left: -120px;
+    top: 20px;
+}
+.container-desktop img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: 850px;
+}
+.container-title-seekr {
+    margin-left: 40px;
+}
+.container-title-seekr img {
+    max-width: 100%;
+    width: 110px;
+    margin-bottom: 30px;
+}
+
+p.tag {
+    margin-top: 40px;
+    background: #fff6;
+    width: 90px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+}

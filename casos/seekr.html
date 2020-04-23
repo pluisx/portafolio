@@ -19,6 +19,8 @@
 
   <!-- Main Stylesheet -->
   <link href="../css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/casos/css/style-casos.css">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -29,7 +31,7 @@
 <body>
   
 
-  <header class="nav-down">
+  <header class="nav-down header-seekr">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand font-tertiary h3" href="../index.html"><img class="prin-logo" src="../images/logo-pluisx.png" alt="Logo Pluisx"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -41,34 +43,41 @@
         <ul class="navbar-nav ml-auto">
           
           <li class="nav-item">
-            <a class="nav-link btnComenzar" href="#portfolio-position">Portafolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">Acerca de mí</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Conversemos</a>
+            <a class="nav-link btnCasos" href="#contact-me">Conversemos</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-<!-- page title -->
-<section class="page-title bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">Blogs</h1>
+  <div class="container-breadcrumb bg-seekr">
+    <div class="container">
+      <div class="col-12">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Casos</a></li>
+          <li class="breadcrumb-item"><a href="#"></a>Seekr</li>
+        </ol>
       </div>
     </div>
   </div>
-  <!-- background shapes -->
-  <img src="../images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="../images/illustrations/shape-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="../images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="../images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+
+<!-- page title -->
+<section class="page-title bg-seekr">
+  <div class="container position-relative">
+    <div class="container-desktop">
+      <img src="/casos/images/desktop-seekr.png" alt="Buscador inteligente de productos tecnológicos">
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-7">
+        <div class="container-title-seekr">
+          <img src="/casos/images/logo-seekr.png" alt="Logo proyecto Seekr">
+          <h1 class="text-white font-tertiary line-height-1">Buscador inteligente</h1>
+          <h4 class="text-white font-tertiary mt-20 fz-30">de productos tecnológicos</h4>
+          <p class="tag">UX / UI</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- /page title -->
 
@@ -117,6 +126,19 @@
             ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
             labore et dolore magnam aliquam quaerat voluptatem.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <canvas id="myChart" ></canvas>
+      </div>
+      <div class="col-md-6">
+        <canvas id="myChart2" ></canvas>
       </div>
     </div>
   </div>
@@ -193,46 +215,9 @@
 <!-- Main Script -->
 <script src="../js/script.js"></script>
 
-<script>
-  // Esconder el menu en scrolldown
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-</script>
+<script src="/casos/js/script-casos.js"></script>
 
 </body>
 </html>

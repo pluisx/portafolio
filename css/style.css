@@ -104,6 +104,10 @@ h6, .h6 {
   font-size: 25px;
 }
 
+.fz-30 {
+  font-size: 30px;
+}
+
 .fz-35 {
   font-size: 35px;
 }
@@ -1096,7 +1100,7 @@ blockquote {
 .page-title .bg-shape-5 {
   position: absolute;
   left: 90px;
-  bottom: -50px;
+  bottom: 180px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

@@ -438,6 +438,10 @@ a:hover {
   color: var(--primary-color);
 }
 
+.text-seekr{
+  color:#4E70F8 !important;
+}
+
 .text-grey {
   color: gray;
 }

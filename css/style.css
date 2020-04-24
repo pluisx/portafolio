@@ -100,6 +100,10 @@ h6, .h6 {
   font-size: 15px;
 }
 
+.fz-22{
+  font-size: 22px;
+}
+
 .fz-25 {
   font-size: 25px;
 }
@@ -493,10 +497,12 @@ a:hover {
 .mt-30 {
   margin-top: 30px;
 }
+.mt-6 {
+  margin-top: 4em;
+}
 .mt-7 {
   margin-top: 7em;
 }
-
 .mt-9 {
   margin-top: 9em;
 }
@@ -507,6 +513,20 @@ a:hover {
 
 .py-80 {
   padding: 80px 0;
+}
+
+.pb-16 {
+  padding-bottom: 16em;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pt-80 {
+  padding-top: 80px;
 }
 
 .w-55{
@@ -532,6 +552,9 @@ a:hover {
 
 .h-75-px {
   height: 75px;
+}
+.h-100-px {
+  height: 100px;
 }
 
 .max-width-40 {
@@ -701,9 +724,6 @@ textarea.form-control {
   position: absolute;
   z-index: 1;
 }
-
-
-
 
 #l1 {
   bottom: 0;

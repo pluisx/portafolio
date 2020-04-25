@@ -1246,6 +1246,7 @@ blockquote {
   transform: translateY(50%) scaleX(1);
 }
 
+
 @media (max-width: 991px) {
   h1, .h1 {
     font-size: 65px;

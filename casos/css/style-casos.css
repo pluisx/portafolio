@@ -194,8 +194,9 @@ p.tag {
 .container-wireframes {
     height: 225em;
 }
-
-
+.img-solucion {
+    width: 100%;
+}
 
 
 @media(max-width:1199px){

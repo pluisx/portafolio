@@ -99,6 +99,9 @@ h6, .h6 {
 .fz-15 {
   font-size: 15px;
 }
+.fz-20 {
+  font-size: 20px;
+}
 
 .fz-22{
   font-size: 22px;
@@ -156,6 +159,11 @@ h6, .h6 {
   box-shadow: none;
 }
 
+.btn-md {
+  font-size: 16px;
+  padding: 10px 30px
+}
+
 .btn-sm {
   font-size: 15px;
   padding: 10px 30px;
@@ -173,16 +181,25 @@ h6, .h6 {
 }
 
 .btn-primary:active {
-  background: #e6811b !important;
+  background: #ec7903 !important;
 }
 
 .btn-primary:hover {
-  background: #e6811b;
+  background: #ec7903;
 }
 
 .btn-primary.focus, .btn-primary.active {
-  background: #e6811b !important;
+  background: #ec7903 !important;
   box-shadow: none !important;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+}
+.btn-secondary img {
+  width: 25px;
+  margin-right: 10px;
 }
 
 .btn-transparent {
@@ -419,7 +436,7 @@ a:hover {
 
 
 .text-primary {
-  color: #41228e !important;
+  color: var(--primary-color) !important;
 }
 
 .text-color {
@@ -513,6 +530,9 @@ a:hover {
 
 .mr-6 {
   margin-right: 4em;
+}
+.my-15 {
+  margin: 15px 0;
 }
 
 .py-80 {
@@ -1160,6 +1180,57 @@ blockquote {
 }
 
 
+/*------ Modals -------*/
+}
+#ModalTitle.title {
+    font-weight: lighter;
+}
+.modal-header .close {
+  padding: 0 15px 0 !important;
+  margin: auto 0 !important;
+}
+.modal-header {
+  border-bottom: 0 !important;
+}
+.p-modal {
+  font-size: 18px;
+  line-height: 22px;
+}
+.modal-footer {
+  border: 0;
+  background: #ececec;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 15px;
+}
+.btn.btn-secondary-modal {
+  background: unset;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #9b9999;
+  font-weight: 400;
+  text-transform: initial;
+  margin: auto;
+}
+.btn.btn-secondary-modal:hover {
+    text-decoration: underline;
+}
+.btn.btn-primary-modal {
+  background: var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 20px;
+}
+.btn.btn-primary-modal:hover {
+  background: #ec7903;
+  color: #fff;
+}
+.btn.btn-primary-modal img {
+  margin-right: 10px;
+  width: 25px;
+}
+
 /*------ Tooltip Experiencia y educación -------*/
 
 [data-tooltip] {
@@ -1296,6 +1367,18 @@ blockquote {
   .fz-70 {
     font-size: 60px;
   }
+  .order   {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .modal-content {
+    width: 90%;
+    margin: auto;
+  }
+  .container-btn {
+    text-align: center !important;
+    margin-top: 30px;
+}
 }
 
 @media (max-width: 650px) {

@@ -580,6 +580,9 @@ a:hover {
 .h-100-px {
   height: 100px;
 }
+.h-130-px{
+  height: 0;
+}
 
 .max-width-40 {
   max-width: 40%;
@@ -1378,7 +1381,10 @@ blockquote {
   .container-btn {
     text-align: center !important;
     margin-top: 30px;
-}
+  }
+  .h-130-px{
+    height: 130px;
+  }
 }
 
 @media (max-width: 650px) {

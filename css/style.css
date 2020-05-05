@@ -1473,3 +1473,19 @@ blockquote {
     font-size: 17px;
   }
 }
+
+
+/*---  Firma  ---*/
+
+figure.figure img.firma {
+  width: 100%;
+}
+.mb-8px {
+  margin-bottom: 8px;
+}
+.mr-5px {
+  margin-right: 5px;
+}
+.f-helvetica {
+  font-family: "Helvetica Neue";
+}

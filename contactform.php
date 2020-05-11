@@ -7,7 +7,7 @@
 
         $mailTo="hola@pluisx.com";
         $subject='Formulario de Pluisx.com';
-        $headers="From: ".$mailFrom;
+        $headers="From: ".$mailFrom;    
         $message="Haz recibido un correo de ".$name.".\n\n".$massage;
 
         if(mail($mailTo, $subject, $message, $headers)){

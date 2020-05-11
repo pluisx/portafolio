@@ -10,5 +10,5 @@ if (isset($_POST['submit'])) {
     $txt = "Haz recibido un correo de ".$name.".\n\n".$massage;
 
     mail($mailTo, $txt, $headers);
-    header("Location: index.php?mailsend")
+    header("Location: index.php?mailsend");
 }

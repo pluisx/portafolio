@@ -299,19 +299,19 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
 
-          <form action="contactform.php" class="row" method="POST">
+          <form id="contact" action="contactform.php" class="row" method="post" name="form">
             <div class="col-md-6 zindex-1">
               <input type="text" id="name" name="name" placeholder="Nombre" class="form-control px-0 mb-4" required>
             </div>
             <div class="col-md-6 zindex-1">
-              <input type="text" id="email" name="email" placeholder="Correo" class="form-control px-0 mb-4" required>
+              <input type="email" id="email" name="email" placeholder="Correo" class="form-control px-0 mb-4" required>
             </div>
             <div class="col-12 zindex-1">
               <textarea name="message" id="message" class="form-control px-0 mb-4"
                 placeholder="Escríbeme"></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto zindex-1">
-              <button class="btn btn-primary w-100" type="submit" name="submit">Enviar</button>
+              <button class="btn btn-primary w-100" id="contact-submit" type="submit" name="submit">Enviar</button>
             </div>
           </form>
 

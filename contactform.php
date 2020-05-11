@@ -6,7 +6,7 @@
         $message=$_POST['message'];
 
         $mailTo="hola@pluisx.com";
-        $subject='Formulario de Pluisx.com'
+        $subject='Formulario de Pluisx.com';
         $headers="From: ".$mailFrom;
         $message="Haz recibido un correo de ".$name.".\n\n".$massage;
 

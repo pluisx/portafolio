@@ -146,6 +146,3 @@ $( () => {
      
   });
   
-
-  $('#modalTrikadia').data('bs.modal').$backdrop
-  $('#modalTrikadia').data('bs.modal').$backdrop.css('background-color','orange')

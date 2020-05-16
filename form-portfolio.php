@@ -1,11 +1,11 @@
 <?php
 
     if(isset($_POST['submit'])){
-        $name=$_POST['name'];
-        $mailFrom=$_POST['email'];
-        $message=$_POST['message'];
+        $name=$_POST['nombre'];
+        $mailFrom=$_POST['correo'];
+        $message=$_POST['mensaje'];
 
-        $mailTo="hola@pluisx.com";
+        $mailTo="pluisx.com";
         $subject='Formulario de Pluisx.com';
         $headers="From: ".$mailFrom;
         $message="Haz recibido un correo de ".$name.".\n\n".$massage;

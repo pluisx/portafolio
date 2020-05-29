@@ -1,0 +1,50 @@
+May 27 13:16:12 10.71.60.0 u100714437 Connection from 10.71.60.0 port 65142 on 74.208.57.227 port 22
+May 27 13:16:20 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 65142 ssh2
+May 27 13:16:20 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 65142
+May 27 13:16:20 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 27 13:33:05 10.71.60.0 u100714437 Connection closed by 10.71.60.0
+May 27 13:33:05 10.71.60.0 u100714437 session closed for local user u100714437 from [10.71.60.0]
+May 27 22:54:31 10.71.60.0 u100714437 Connection from 10.71.60.0 port 65296 on 74.208.57.227 port 22
+May 27 22:54:38 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 65296 ssh2
+May 27 22:54:39 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 65296
+May 27 22:54:39 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 27 23:42:04 10.71.60.0 u100714437 Connection closed by 10.71.60.0
+May 27 23:42:04 10.71.60.0 u100714437 session closed for local user u100714437 from [10.71.60.0]
+May 29 00:25:51 10.71.60.0 u100714437 Connection from 10.71.60.0 port 25522 on 74.208.57.227 port 22
+May 29 00:26:03 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 25522 ssh2
+May 29 00:26:03 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 25522
+May 29 00:26:03 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 29 00:26:17 10.71.60.0 u100714437 Connection closed by 10.71.60.0
+May 29 00:26:17 10.71.60.0 u100714437 session closed for local user u100714437 from [10.71.60.0]
+May 29 14:41:23 10.71.60.0 u100714437 Connection from 10.71.60.0 port 14002 on 74.208.57.227 port 22
+May 29 14:41:28 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 14002 ssh2
+May 29 14:41:29 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 14002
+May 29 14:41:29 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 29 14:41:38 10.71.60.0 u100714437 sent status No such file
+May 29 14:41:35 10.71.60.0 u100714437 Connection from 10.71.60.0 port 22764 on 74.208.57.227 port 22
+May 29 14:41:38 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 22764 ssh2
+May 29 14:41:35 10.71.60.0 u100714437 Connection from 10.71.60.0 port 22754 on 74.208.57.227 port 22
+May 29 14:41:39 10.71.60.0 u100714437 Accepted password for u100714437 from 10.71.60.0 port 22754 ssh2
+May 29 14:41:39 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 22764
+May 29 14:41:39 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 29 14:41:39 10.71.60.0 u100714437 Starting session: subsystem 'sftp' for u100714437 from 10.71.60.0 port 22754
+May 29 14:41:39 10.71.60.0 u100714437 session opened for local user u100714437 from [10.71.60.0]
+May 29 14:41:40 10.71.60.0 u100714437 open "/form-portfolio.php" flags READ mode 0666
+May 29 14:41:41 10.71.60.0 u100714437 open "/index.html" flags READ mode 0666
+May 29 14:41:41 10.71.60.0 u100714437 close "/form-portfolio.php" bytes read 413 written 0
+May 29 14:41:41 10.71.60.0 u100714437 [10.71.60.0|get|1|413|0|0|0|2f666f726d2d706f7274666f6c696f2e706870|]
+May 29 14:41:41 10.71.60.0 u100714437 close "/index.html" bytes read 17816 written 0
+May 29 14:41:41 10.71.60.0 u100714437 [10.71.60.0|get|0|17816|0|0|0|2f696e6465782e68746d6c|]
+May 29 14:41:42 10.71.60.0 u100714437 open "/README.md" flags READ mode 0666
+May 29 14:41:42 10.71.60.0 u100714437 close "/README.md" bytes read 12 written 0
+May 29 14:41:42 10.71.60.0 u100714437 [10.71.60.0|get|0|12|0|0|0|2f524541444d452e6d64|]
+May 29 14:41:42 10.71.60.0 u100714437 open "/logs/access.log.22.4.gz" flags READ mode 0666
+May 29 14:41:43 10.71.60.0 u100714437 close "/logs/access.log.22.4.gz" bytes read 2512 written 0
+May 29 14:41:43 10.71.60.0 u100714437 [10.71.60.0|get|1|2512|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e342e677a|]
+May 29 14:41:43 10.71.60.0 u100714437 open "/logs/access.log.22.5" flags READ mode 0666
+May 29 14:41:44 10.71.60.0 u100714437 open "/logs/access.log.22.3.gz" flags READ mode 0666
+May 29 14:41:44 10.71.60.0 u100714437 close "/logs/access.log.22.5" bytes read 7123 written 0
+May 29 14:41:44 10.71.60.0 u100714437 [10.71.60.0|get|1|7123|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e35|]
+May 29 14:41:44 10.71.60.0 u100714437 close "/logs/access.log.22.3.gz" bytes read 2576 written 0
+May 29 14:41:44 10.71.60.0 u100714437 [10.71.60.0|get|0|2576|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e332e677a|]
+May 29 14:41:44 10.71.60.0 u100714437 open "/logs/sftp.log" flags READ mode 0666

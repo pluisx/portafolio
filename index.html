@@ -301,33 +301,34 @@
       <div class="col-lg-6 mx-auto">
         <div class="bg-white rounded  p-4 shadow-down">
 
-          <form class="form" id="form" action="#" method="POST">
+          <div id="frmContact" class="form" id="form">
             <div class="form-portfolio zindex-1">
-                <label>Nombre</label>
-                <input type="text" class="focus" id="nombre" name="nombre" placeholder="Pedro Luis">
+                <label for="inp_nombre">Nombre</label><span id="userName-info" class="info"></span>
+                <input type="text" name="userName" id="userName" class="demoInputBox" placeholder="Pedro Luis">
+                <i class="ti-check-box"></i>
+                <i class="ti-alert"></i>
+                <small>Mensaje de error</small>
+
+              </div>
+              <div class="form-portfolio zindex-1">
+                <label for="inp_correo">Correo</label><span id="userEmail-info" class="info"></span>
+                <input type="text" name="userEmail" id="userEmail" class="demoInputBox" placeholder="hola@empresa.com">
                 <i class="ti-check-box"></i>
                 <i class="ti-alert"></i>
                 <small>Mensaje de error</small>
               </div>
               <div class="form-portfolio zindex-1">
-                <label>Correo</label>
-                <input type="text" class="focus" id="correo" name="correo" placeholder="hola@empresa.com">
-                <i class="ti-check-box"></i>
-                <i class="ti-alert"></i>
-                <small>Mensaje de error</small>
-              </div>
-              <div class="form-portfolio zindex-1">
-                <label>Escríbeme</label>
-                <textarea type="text" class="focus" id="mensaje" name="mensaje" placeholder="Hola, quiero conversar contigo..."></textarea>
+                <label for="inp_escribeme">Escríbeme</label><span id="content-info" class="info"></span>
+                <textarea name="content" id="content" class="demoInputBox" placeholder="Hola, quiero conversar contigo..."></textarea>
                 <i class="ti-check-box"></i>
                 <i class="ti-alert"></i>
                 <small>Mensaje de error</small>
               </div>
               <div class="zindex-1">
-                <button class="btn btn-primary w-100"  type="submit" >Enviar</button>
+                <button class="btn btn-primary w-100 btnAction" name="submit" onClick="sendContact();">Enviar</button>
               </div>
-          </form>
-
+              <div id="mail-status"></div>
+            </div>
           
         </div>
       </div>
@@ -411,6 +412,8 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 
 </body>
 </html>

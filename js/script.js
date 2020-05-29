@@ -193,57 +193,49 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-  
-const form = document.getElementById('form');
-const username = document.getElementById('nombre');
-const email = document.getElementById('correo');
-const message = document.getElementById('mensaje');
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
-	
-	checkInputs();
-});
 
-function checkInputs() {
-	// trim to remove the whitespaces
-	const usernameValue = username.value.trim();
-	const emailValue = email.value.trim();
-	const messageValue = message.value.trim();
-	
-	if(usernameValue === '') {
-		setErrorFor(username, 'Tu nombre no puede quedar en blanco.');
-	} else {
-		setSuccessFor(username);
-	}
-	
-	if(emailValue === '') {
-		setErrorFor(email, 'Tu correo no puede quedar en blanco.');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Escribe un correo válido.');
-	} else {
-		setSuccessFor(email);
-	}
-	
-	if(messageValue === '') {
-		setErrorFor(message, 'Tienes que escribirme algún mensaje.');
-	} else {
-		setSuccessFor(message);
-	}
+function sendContact() {
+    var valid;	
+    valid = validateContact();
+    if(valid) {
+        jQuery.ajax({
+            url: "form-portfolio.php",
+            data:'userName='+$("#userName").val()+'&userEmail='+
+            $("#userEmail").val()+'&content='+
+            $(content).val(),
+            type: "POST",
+            success:function(data){
+                $("#mail-status").html(data);
+            },
+            error:function (){}
+        });
+    }
 }
 
-function setErrorFor(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
-	formControl.className = 'form-portfolio errorp';
-	small.innerText = message;
-}
-
-function setSuccessFor(input) {
-	const formControl = input.parentElement;
-	formControl.className = 'form-portfolio success';
-}
-	
-function isEmail(correo) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(correo);
+function validateContact() {
+    var valid = true;	
+    $(".demoInputBox").css('background-color','');
+    $(".info").html('');
+    if(!$("#userName").val()) {
+        $("#userName-info").html("(required)");
+        $("#userName").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val()) {
+        $("#userEmail-info").html("(required)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#userEmail-info").html("(invalid)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#content").val()) {
+        $("#content-info").html("(required)");
+        $("#content").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    return valid;
 }

@@ -155,9 +155,7 @@ h6, .h6 {
 }
 
 .btn:focus {
-  outline: 0;
-  box-shadow: none !important;
-  background: #ff8400;
+  display: none;
 }
 
 .btn:active {
@@ -747,6 +745,24 @@ a:hover {
 .focus:focus{
   border: 2px solid var(--primary-color);
   outline: none;
+}
+
+
+.demoInputBox{padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
+.error{background-color: #FF6600;border:#AA4502 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
+
+.success {
+  border: 1px solid #32ce5a;
+  padding: 5px 10px;
+  color: #01ab2d;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.success i.ti-check-box {
+  float: right;
+  margin-top: 6px;
+  font-weight: 600;
 }
 
 

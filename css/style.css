@@ -227,8 +227,13 @@ h6, .h6 {
     animation-timing-function: ease-in-out;
 }
 
-a.btnComenzar:hover {
-  color: var(--secondary-color) !important;
+a.nav-link.btnComenzar:focus {
+  background: none;
+  border: 1.5px solid var(--primary-color);
+}
+
+a.nav-link.btnComenzar:hover {
+  color: white !important;
 }
 
 @keyframes animacionBtnComenzar {

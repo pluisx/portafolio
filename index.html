@@ -98,6 +98,7 @@
   <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
     <li class="mb-3"><a class="text-white fz-25" href="mailto:hola@pluisx.com?subject=Hola Pedro, quiero que trabajemos juntos"><i class="ti-email"></i></a></li>
     <li class="mb-3"><a class="text-white fz-25" href="https://www.instagram.com/pluisx/" target="_blank"><i class="ti-instagram"></i></a></li>
+    <li class="mb-3"><a class="text-white fz-25" href="https://github.com/pluisx" target="_blank"><i class="ti-github"></i></a></li>
   </ul>
   <!-- /social icon -->
 
@@ -108,25 +109,25 @@
 <section class="section">
   <div class="container position-absolute zindex-1" id="portfolio-position">
     <div class="row shuffle-wrapper">
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 shuffle-item">
+      <div class="col-6 col-lg-4 mb-4 shuffle-item">
         <a href="casos/seekr">
           <div class="position-relative rounded hover-wrapper bg-cyan-light">
-            <img src="/images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100 opacity-2">
+            <img src="/images/portfolio/item-1.png" alt="Caso Seekr, proyecto UX/UI" class="img-fluid rounded w-100 opacity-2">
             <h2 class="position-absolute text-white font-tertiary title-portfolio zindex-1">UX/UI <br>Seekr </h2>
             <div class="hover-overlay"></div>
           </div>
         </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 shuffle-item">
-        <a href="#" data-toggle="modal" data-target="#modalCasos">
-          <div class="position-relative rounded hover-wrapper bg-orange">
-            <img src="/images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 opacity-1">
-            <h2 class="position-absolute text-white font-tertiary title-portfolio zindex-1 mt-30">E-commerce Trikadia</h2>
+      <div class="col-6 col-lg-4 mb-4 shuffle-item">
+        <a href="https://pluisx.github.io/bookmark-landing/" target="_blank">
+          <div class="position-relative rounded hover-wrapper bg-bookmark">
+            <img src="/images/portfolio/caso-bookmark.jpg" alt="Bookmark from Frontendmentor.io" class="img-fluid rounded w-100 opacity-1">
+            <h2 class="position-absolute text-white font-tertiary title-portfolio zindex-1 mt-30">Front-End Bookmark</h2>
             <div class="hover-overlay"></div>
           </div>
         </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 shuffle-item">
+      <div class="col-6 col-lg-4 mb-4 shuffle-item">
         <a href="#" data-toggle="modal" data-target="#modalCasos">
           <div class="position-relative rounded hover-wrapper bg-green">
             <img src="/images/portfolio/item-6.png" alt="portfolio-image" class="img-fluid rounded w-100 opacity-1">
@@ -135,7 +136,7 @@
           </div>
         </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 shuffle-item">
+      <div class="col-6 col-lg-4 mb-4 shuffle-item">
         <a href="#" data-toggle="modal" data-target="#modalCasos">
           <div class="position-relative rounded hover-wrapper bg-red">
             <img src="/images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100 opacity-1">
@@ -303,33 +304,37 @@
 
           <div id="frmContact" class="form" id="form">
             <div class="form-portfolio zindex-1">
-                <label for="inp_nombre">Nombre</label><span id="userName-info" class="info"></span>
+                <label for="inp_nombre">Nombre</label>
                 <input type="text" name="userName" id="userName" class="demoInputBox" placeholder="Pedro Luis">
+                <span id="userName-info" class="info"></span>
                 <i class="ti-check-box"></i>
+
+                <!-- <i class="ti-check-box"></i>
                 <i class="ti-alert"></i>
-                <small>Mensaje de error</small>
+                <small>Mensaje de error</small> -->
 
               </div>
               <div class="form-portfolio zindex-1">
-                <label for="inp_correo">Correo</label><span id="userEmail-info" class="info"></span>
+                <label for="inp_correo">Correo</label>
                 <input type="text" name="userEmail" id="userEmail" class="demoInputBox" placeholder="hola@empresa.com">
-                <i class="ti-check-box"></i>
+                <span id="userEmail-info" class="info"></span>
+                <!-- <i class="ti-check-box"></i>
                 <i class="ti-alert"></i>
-                <small>Mensaje de error</small>
+                <small>Mensaje de error</small> -->
               </div>
               <div class="form-portfolio zindex-1">
-                <label for="inp_escribeme">Escríbeme</label><span id="content-info" class="info"></span>
+                <label for="inp_escribeme">Escríbeme</label>
                 <textarea name="content" id="content" class="demoInputBox" placeholder="Hola, quiero conversar contigo..."></textarea>
-                <i class="ti-check-box"></i>
-                <i class="ti-alert"></i>
-                <small>Mensaje de error</small>
+                <span id="content-info" class="info"></span>
+                <!-- <i class="ti-alert"></i>
+                <small>Mensaje de error</small> -->
               </div>
               <div class="zindex-1">
                 <button class="btn btn-primary w-100 btnAction" name="submit" onClick="sendContact();">Enviar</button>
               </div>
               <div id="mail-status"></div>
             </div>
-          
+
         </div>
       </div>
     </div>

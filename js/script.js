@@ -215,27 +215,30 @@ function sendContact() {
 
 function validateContact() {
     var valid = true;	
-    $(".demoInputBox").css('background-color','');
+    $(".demoInputBox").css('border-color','#2ecc71');
+    $(".ti-check-box").css('color','#2ecc71');
     $(".info").html('');
     if(!$("#userName").val()) {
-        $("#userName-info").html("(required)");
-        $("#userName").css('background-color','#FFFFDF');
+        $("#userName-info").html("El nombre es requerido.");
+        $("#userName").css('border-color','#e74c3c');
         valid = false;
     }
     if(!$("#userEmail").val()) {
-        $("#userEmail-info").html("(required)");
-        $("#userEmail").css('background-color','#FFFFDF');
+        $("#userEmail-info").html("El correo es requerido.");
+        $("#userEmail").css('border-color','#e74c3c');
         valid = false;
     }
     if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail-info").html("(invalid)");
-        $("#userEmail").css('background-color','#FFFFDF');
+        $("#userEmail-info").html("El correo es requerido.");
+        $("#userEmail").css('border-color','#e74c3c');
         valid = false;
     }
     if(!$("#content").val()) {
-        $("#content-info").html("(required)");
-        $("#content").css('background-color','#FFFFDF');
+        $("#content-info").html("El mensaje es requerido.");
+        $("#content").css('border-color','#e74c3c');
         valid = false;
     }
     return valid;
 }
+
+

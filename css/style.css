@@ -96,6 +96,10 @@ h6, .h6 {
   font-size: 14px;
 }
 
+.d-sm-flex {
+  flex-direction: column;
+}
+
 .fw-light {
   font-weight: 200;
 }
@@ -225,6 +229,7 @@ h6, .h6 {
     animation-name: animacionBtnComenzar;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    border: 2px solid var(--primary-color);
 }
 
 a.nav-link.btnComenzar:focus {
@@ -234,6 +239,9 @@ a.nav-link.btnComenzar:focus {
 
 a.nav-link.btnComenzar:hover {
   color: white !important;
+  background: none;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
 }
 
 @keyframes animacionBtnComenzar {

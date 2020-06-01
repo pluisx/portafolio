@@ -222,7 +222,7 @@ function validateContact() {
     $(".ti-check-box").css('color','#2ecc71');
     
     if(!$("#userName").val()) {
-        $("#userName-info").html("El nombre es requerido.");
+        $("#userName-info").html("El nombre es incorrecto.");
         $("#userName").css('border-color','#e74c3c');
         $("#alertName").css('visibility', 'visible');
         $("#alertName").css('color','#e74c3c','padding-right','10px');
@@ -230,7 +230,7 @@ function validateContact() {
         valid = false;
     }
     if(!$("#userEmail").val()) {
-        $("#userEmail-info").html("El correo es requerido.");
+        $("#userEmail-info").html("El correo es incorrecto.");
         $("#userEmail").css('border-color','#e74c3c');
         $("#alertEmail").css('visibility', 'visible');
         $("#alertEmail").css('color','#e74c3c','padding-right','10px');
@@ -238,7 +238,7 @@ function validateContact() {
         valid = false;
     }
     if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail-info").html("El correo es requerido.");
+        $("#userEmail-info").html("El correo es incorrecto.");
         $("#userEmail").css('border-color','#e74c3c');
         $("#alertEmail").css('visibility', 'visible');
         $("#alertEmail").css('color','#e74c3c','padding-right','10px');
@@ -246,7 +246,7 @@ function validateContact() {
         valid = false;
     }
     if(!$("#content").val()) {
-        $("#content-info").html("El mensaje es requerido.");
+        $("#content-info").html("El mensaje es incorrecto.");
         $("#content").css('border-color','#e74c3c');
         $("#alertContent").css('visibility', 'visible');
         $("#alertContent").css('color','#e74c3c','padding-right','10px');

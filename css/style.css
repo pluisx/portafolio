@@ -1393,13 +1393,13 @@ blockquote {
     flex-direction: column;
   }
   #about-me {
-    padding-top: 60% !important;
+    padding-top: 60%;
   }
 }
 
 @media (max-width: 871px) {
   #about-me {
-    padding-top: 70% !important;
+    padding-top: 70%;
   }
 }
 
@@ -1491,11 +1491,6 @@ blockquote {
 
 
 @media (max-width: 575px) {
-  .title-portfolio {
-    font-size: 27px;
-    padding: 14px;
-    top: 4%;
-  }
   .mt-30 {
     margin-top: 0;
   }
@@ -1511,21 +1506,24 @@ blockquote {
   .modal-header .title {
     font-size: 30px;
   }
-}
-
-@media (max-width: 489px) {
   .title-portfolio {
-    font-size: 23px;
+    font-size: 35px;
   }
-  .h-75-px {
-    height: 47px;
+  #portfolio-position {
+    position: relative !important;
+    transform: translate(0, -2%);
+  }
+  .h-caso {
+    height: 200px !important;
+  }
+  #about-me {
+    padding-top: 0;
   }
 }
 
-@media (max-width: 435px) {
-  .title-portfolio {
-    font-size: 17px;
+  @media (max-width: 489px) {
+    
+    .h-75-px {
+      height: 47px;
+    }
   }
-}
-
-

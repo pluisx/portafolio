@@ -216,26 +216,41 @@ function sendContact() {
 function validateContact() {
     var valid = true;	
     $(".demoInputBox").css('border-color','#2ecc71');
-    $(".ti-check-box").css('color','#2ecc71');
     $(".info").html('');
+    $(".ti-alert").css('visibility','hidden');
+    $(".ti-check-box").css('visibility','visible');
+    $(".ti-check-box").css('color','#2ecc71');
+    
     if(!$("#userName").val()) {
         $("#userName-info").html("El nombre es requerido.");
         $("#userName").css('border-color','#e74c3c');
+        $("#alertName").css('visibility', 'visible');
+        $("#alertName").css('color','#e74c3c','padding-right','10px');
+        $("#checkName").css('visibility','hidden');
         valid = false;
     }
     if(!$("#userEmail").val()) {
         $("#userEmail-info").html("El correo es requerido.");
         $("#userEmail").css('border-color','#e74c3c');
+        $("#alertEmail").css('visibility', 'visible');
+        $("#alertEmail").css('color','#e74c3c','padding-right','10px');
+        $("#checkEmail").css('visibility','hidden');
         valid = false;
     }
     if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
         $("#userEmail-info").html("El correo es requerido.");
         $("#userEmail").css('border-color','#e74c3c');
+        $("#alertEmail").css('visibility', 'visible');
+        $("#alertEmail").css('color','#e74c3c','padding-right','10px');
+        $("#checkEmail").css('visibility','hidden');
         valid = false;
     }
     if(!$("#content").val()) {
         $("#content-info").html("El mensaje es requerido.");
         $("#content").css('border-color','#e74c3c');
+        $("#alertContent").css('visibility', 'visible');
+        $("#alertContent").css('color','#e74c3c','padding-right','10px');
+        $("#checkContent").css('visibility','hidden');
         valid = false;
     }
     return valid;

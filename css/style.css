@@ -1530,6 +1530,7 @@ blockquote {
   }
   .d-sm-flex {
     display: flex;
+    flex-direction: row;
   }
   ul.list-social li{margin-right: 30px;}
 }

@@ -626,6 +626,10 @@ a:hover {
   border-radius: 15px;
 }
 
+.full-border {
+  border-radius: 50%;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }

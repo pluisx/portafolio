@@ -1287,7 +1287,7 @@ blockquote {
 }
 .btn.btn-primary-modal:hover {
   background: #ec7903;
-  color: #fff;
+  color: #fff !important;
 }
 .btn.btn-primary-modal img {
   margin-right: 10px;
